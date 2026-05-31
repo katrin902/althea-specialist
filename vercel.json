@@ -1,11 +1,6 @@
 {
   "buildCommand": "node node_modules/vite/bin/vite.js build",
   "outputDirectory": "dist",
-  "installCommand": "npm install",
-  "framework": null,
-  "env": {
-    "NODE_ENV": "production"
-  },
   "rewrites": [
     {
       "source": "/:path*",
@@ -14,11 +9,11 @@
   ],
   "headers": [
     {
-      "source": "/assets/:path*",
+      "source": "/index.html",
       "headers": [
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors *"
         }
       ]
     },
@@ -37,14 +32,6 @@
         {
           "key": "Content-Security-Policy",
           "value": "frame-ancestors *"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
         }
       ]
     }
