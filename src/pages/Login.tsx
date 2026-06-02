@@ -30,7 +30,7 @@ export function Login({ onLogin }: Props) {
       }}>
         <div style={{ textAlign: 'center', marginBottom: 36 }}>
           <div style={{ fontSize: 42, fontWeight: 800, color: colors.primary, letterSpacing: -1, marginBottom: 4 }}>
-            Althea
+            AltHea
           </div>
           <div style={{ fontSize: 14, color: colors.textSecondary }}>Specialist Dashboard</div>
         </div>

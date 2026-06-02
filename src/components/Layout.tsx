@@ -40,7 +40,7 @@ export function Layout({ children, specialist }: Props) {
 
         {/* Logo */}
         <div style={{ padding: '22px 20px 18px', borderBottom: `1px solid ${colors.sidebarBorder}` }}>
-          <div style={{ fontSize: 26, fontWeight: 800, color: colors.primary, letterSpacing: -0.5 }}>Althea</div>
+          <div style={{ fontSize: 26, fontWeight: 800, color: colors.primary, letterSpacing: -0.5 }}>AltHea</div>
           <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', marginTop: 2, letterSpacing: '0.02em' }}>Specialist Dashboard</div>
         </div>
 
